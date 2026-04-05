@@ -335,3 +335,100 @@ p {
         transform: translateY(0);
     }
 }
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+
+    .nav-container {
+        width: 95%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    /* NAVBAR STACK */
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* HERO */
+    .hero {
+        height: auto;
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* CARD */
+    .card {
+        padding: 20px;
+        width: 100%;
+    }
+
+    /* SERVICES GRID → 1 COLUMN */
+    .grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* INPUTS */
+    input, select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* BUTTONS */
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* LOGO */
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+}
+
+/* ================= SMALL PHONES ================= */
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
